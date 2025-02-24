@@ -6,11 +6,9 @@ librerias de pandas para resolver las preguntas.
 """
 
 
+import pandas as pd  # type: ignore
+
 def pregunta_02():
-    """
-    ¿Cuál es la cantidad de columnas en la tabla `tbl0.tsv`?
+    df = pd.read_csv("files/input/tbl0.tsv", sep="\t")
+    return df.shape[1]
 
-    Rta/
-    4
-
-    """
